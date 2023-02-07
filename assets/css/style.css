@@ -35,8 +35,10 @@
   --rgba_darkblue: #1d1e2ead;
 
   /* FONT SIZES */
+  --200px: 200px;
   --100px: 100px;
   --70px: 70px;
+  --50px: 50px;
   --35px: 35px;
   --30px: 30px;
   --25px: 25px;
@@ -714,6 +716,17 @@ header ul li:hover {
   font-size: var(--16px);
 }
 
+.skill_stars {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  gap: 5px;
+}
+
+.skill_stars i {
+  font-size: var(--20px);
+}
+
 .progress [data-progress] {
   border-radius: 3px;
   margin-top: 5%;
@@ -837,7 +850,7 @@ header ul li:hover {
 footer {
   width: 100%;
   color: var(--white);
-  padding: 6% 0px 3% 0%;
+  padding: 6% 0px 2.5% 0%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -882,17 +895,20 @@ footer ul a:hover {
 
 .copyright {
   margin: 0 auto;
-  font-size: var(--16px);
+  font-size: var(--13px);
   font-weight: 400;
   text-align: center;
+  margin-top: 1%;
 }
 /* FOOTER END */
 
 @media only screen and (max-width: 960px) {
   /* FONT SIZES */
   :root {
+    --200px: 160px;
     --100px: 80px;
     --70px: 60px;
+    --50px: 50px;
     --35px: 30px;
     --30px: 30px;
     --25px: 20px;
@@ -944,8 +960,10 @@ footer ul a:hover {
 @media only screen and (max-width: 786px) {
   /* FONT SIZES */
   :root {
+    --200px: 150px;
     --100px: 60px;
     --70px: 40px;
+    --50px: 35px;
     --35px: 30px;
     --30px: 25px;
     --25px: 18px;
@@ -1056,8 +1074,10 @@ footer ul a:hover {
 @media only screen and (max-width: 550px) {
    /* FONT SIZES */
    :root {
+    --200px: 75px;
     --100px: 45px;
     --70px: 30px;
+    --50px: 20px;
     --35px: 20px;
     --30px: 20px;
     --25px: 15px;
@@ -1095,6 +1115,10 @@ footer ul a:hover {
     margin-top: 20%;
   }
 
+  .home_devices img {
+    width: 100%;
+  }
+
   .section2 p {
     padding: 10% 0% 8% 0%;
   }
@@ -1120,6 +1144,19 @@ footer ul a:hover {
 
   .myskills {
     grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .skill i {
+    font-size: var(--200px);
+  }
+
+  .skill h4 {
+    font-size: var(--50px);
+  }
+
+  .skill_stars i {
+    font-size: var(--50px);
   }
 
   .timeline {

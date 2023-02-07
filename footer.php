@@ -39,7 +39,7 @@
         <a href="#section3"><li>Projects</li></a>
         <a href="#section4"><li>Skills</li></a>
         <a href="#section5"><li>Timeline</li></a>
-        <a href="#section6"><li>Contact</li></a>
+        <a href="./contact.php"><li>Contact</li></a>
       </ul>
       <div class="copyright">
         Copyright© <script>document.write(new Date().getFullYear())</script> Rowan Lodewijks | All Rights Reserved

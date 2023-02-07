@@ -23,9 +23,9 @@ $conn = $obj->connection();
 </head>
 
 <body>
-  <section class="section1">
+  <section class="section1" id="section1">
     <div class="canvas_container">
-      <canvas id="canv" width="32" height="32" id="section1"></canvas>
+      <canvas id="canv" width="32" height="32"></canvas>
     </div>
     <div class="container">
       <!-- HEADER START -->
@@ -148,32 +148,60 @@ $conn = $obj->connection();
         <div class="skill">
           <i class="fa-brands fa-html5"></i>
           <h4>HTML</h4>
-          <div class="progress">
+          <!-- <div class="progress">
             <div data-progress="85"></div>
+          </div> -->
+          <div class="skill_stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
           </div>
         </div>
         <div class="skill">
           <i class="fa-brands fa-css3-alt"></i>
           <h4>CSS</h4>
-          <div class="progress">
+          <!-- <div class="progress">
             <div data-progress="75"></div>
+          </div> -->
+          <div class="skill_stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
           </div>
         </div>
         <div class="skill">
           <i class="fa-brands fa-square-js"></i>
           <h4>Javascript</h4>
-          <div class="progress">
+          <!-- <div class="progress">
             <div data-progress="40"></div>
+          </div> -->
+          <div class="skill_stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
           </div>
         </div>
         <div class="skill">
           <i class="fa-brands fa-php"></i>
           <h4>PHP</h4>
-          <div class="progress">
+          <!-- <div class="progress">
             <div data-progress="40"></div>
+          </div> -->
+          <div class="skill_stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
           </div>
         </div>
-        <div class="skill">
+        <!-- <div class="skill">
           <i class="fa-brands fa-bootstrap"></i>
           <h4>Bootstrap</h4>
           <div class="progress">
@@ -200,7 +228,7 @@ $conn = $obj->connection();
           <div class="progress">
             <div data-progress="35"></div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -214,6 +242,16 @@ $conn = $obj->connection();
             <h6>2021 - present</h6>
             <strong>Webdeveloper</strong>
             <b>Grafisch Lyceum Utrecht</b>
+            <p>Ik heb de opleiding Webdeveloper gedaan. Deze opleiding was 3 jaar lang.
+            </p>
+          </div>
+        </div>
+        <div class="timeline_item">
+          <i class="fa-solid fa-school"></i>
+          <div class="timeline_item_text">
+            <h6>Comming - Soon</h6>
+            <strong>Comming Soon</strong>
+            <b>Comming Soon</b>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam itaque blanditiis sunt, nemo atque iure.
             </p>
           </div>
@@ -221,19 +259,9 @@ $conn = $obj->connection();
         <div class="timeline_item">
           <i class="fa-solid fa-school"></i>
           <div class="timeline_item_text">
-            <h6>2021 - present</h6>
-            <strong>Webdeveloper</strong>
-            <b>Grafisch Lyceum Utrecht</b>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam itaque blanditiis sunt, nemo atque iure.
-            </p>
-          </div>
-        </div>
-        <div class="timeline_item">
-          <i class="fa-solid fa-school"></i>
-          <div class="timeline_item_text">
-            <h6>2021 - present</h6>
-            <strong>Webdeveloper</strong>
-            <b>Grafisch Lyceum Utrecht</b>
+            <h6>Comming - Soon</h6>
+            <strong>Comming Soon</strong>
+            <b>Comming Soon</b>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam itaque blanditiis sunt, nemo atque iure.
             </p>
           </div>
