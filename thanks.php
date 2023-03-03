@@ -39,44 +39,10 @@ if(isset($_POST['submit'])) {
       <canvas id="canv" width="32" height="32"></canvas>
     </div>
     <div class="container">
-      <!-- HEADER START -->
-      <header>
-        <a href="./">
-          <div class="logo">Rowan</div>
-        </a>
-        <ul>
-          <li><a href="./">Home</a></li>
-          <li><a href="./#section2">About Me</a></li>
-          <li><a href="./#section3">My Projects</a></li>
-          <li class="header_dropdown">
-            <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
-            <label for="dropdown">More</label>
-            <div class="section-dropdown"> 
-              <a href="./#section4">My Skills</a>
-              <a href="./#section5">My Timeline</a>
-            </div>
-          </li>
-        </ul>
-        <a href="./contact" class="contact_link">
-          <div class="contact_text">Contact Me<ion-icon name="chevron-forward-outline"></ion-icon></div>
-        </a>
-        <button class="menu_toggle"><ion-icon name="menu-outline"></ion-icon></button>
-      </header>
-      <div class="menu">
-        <a href="./" onclick="closeMenu();">
-          <div class="menu_logo">Rowan</div>
-        </a>
-        <ul>
-          <a href="./" onclick="closeMenu();"><li>Home<ion-icon name="chevron-forward-outline"></ion-icon></li></a>
-          <a href="./#section2" onclick="closeMenu();"><li>About Me<ion-icon name="chevron-forward-outline"></ion-icon></li></a>
-          <a href="./#section3" onclick="closeMenu();"><li>My Projects<ion-icon name="chevron-forward-outline"></ion-icon></li></a>
-          <a href="./#section4" onclick="closeMenu();"><li>My Skills<ion-icon name="chevron-forward-outline"></ion-icon></li></a>
-          <a href="./#section5" onclick="closeMenu();"><li>My Timeline<ion-icon name="chevron-forward-outline"></ion-icon></li></a>
-        </ul>
-        <a href="./contact" class="menu_contact_link" onclick="closeMenu();">
-          <div class="menu_contact_text2">Contact Me<ion-icon name="chevron-forward-outline"></ion-icon></div>
-        </a>
-      </div>
+      <?php
+        include "./header.php";
+      ?>
+      
       <div class="contact_title">
         <h2>Bedankt, <?php echo $_POST["fname"]; ?></h2>
       </div>
@@ -89,7 +55,6 @@ if(isset($_POST['submit'])) {
       </div>
     </div>
   </section>
-  <!-- HEADER END -->
 
   <?php
     include "./footer.php";

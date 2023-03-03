@@ -28,64 +28,9 @@ $conn = $obj->connection();
       <canvas id="canv" width="32" height="32"></canvas>
     </div>
     <div class="container">
-      <!-- HEADER START -->
-      <header>
-        <a href="./">
-          <div class="logo">Rowan</div>
-        </a>
-        <ul>
-          <li class="active"><a href="#section1">Home</a></li>
-          <li><a href="#section2">About Me</a></li>
-          <li><a href="#section3">My Projects</a></li>
-          <li class="header_dropdown">
-            <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
-            <label for="dropdown">More</label>
-            <div class="section-dropdown">
-              <a href="#section4">My Skills</a>
-              <a href="#section5">My Timeline</a>
-            </div>
-          </li>
-        </ul>
-        <a href="./contact" class="contact_link">
-          <div class="contact_text">Contact Me<ion-icon name="chevron-forward-outline"></ion-icon>
-          </div>
-        </a>
-        <button class="menu_toggle">
-          <ion-icon name="menu-outline"></ion-icon>
-        </button>
-      </header>
-      <div class="menu">
-        <a href="./" onclick="closeMenu();">
-          <div class="menu_logo">Rowan</div>
-        </a>
-        <ul>
-          <a href="#section1" onclick="closeMenu();">
-            <li class="active">Home<ion-icon name="chevron-forward-outline"></ion-icon>
-            </li>
-          </a>
-          <a href="#section2" onclick="closeMenu();">
-            <li>About Me<ion-icon name="chevron-forward-outline"></ion-icon>
-            </li>
-          </a>
-          <a href="#section3" onclick="closeMenu();">
-            <li>My Projects<ion-icon name="chevron-forward-outline"></ion-icon>
-            </li>
-          </a>
-          <a href="#section4" onclick="closeMenu();">
-            <li>My Skills<ion-icon name="chevron-forward-outline"></ion-icon>
-            </li>
-          </a>
-          <a href="#section5" onclick="closeMenu();">
-            <li>My Timeline<ion-icon name="chevron-forward-outline"></ion-icon>
-            </li>
-          </a>
-        </ul>
-        <a href="./contact" class="menu_contact_link" onclick="closeMenu();">
-          <div class="menu_contact_text2">Contact Me<ion-icon name="chevron-forward-outline"></ion-icon>
-          </div>
-        </a>
-      </div>
-      <!-- HEADER END -->
+      <?php
+        include "./header.php";
+      ?>
 
       <!-- MAIN START -->
       <div class="home">
@@ -109,7 +54,7 @@ $conn = $obj->connection();
       <p>
         Hallo, ik ben Rowan Lodewijks en ik ben een zeer gemotiveerd persoon met een passie voor programmeren. Ik ben 18 jaar en ik zit momenteel op het Grafisch Lyceum Utrecht. Ik doe daar de opleiding Webdeveloper en ik zit nu in het tweede jaar.
         Ik ben altijd op zoek naar nieuwe uitdagingen en kansen om mijn vaardigheden uit te breiden en te groeien als professional.
-        Neem een koekeloertje in mijn portfolio om een aantal van mijn werk en realisaties te zien. Bedankt voor het bezoeken!
+        Neem een kijkje in mijn portfolio om een aantal van mijn werk en realisaties te zien. Bedankt voor het bezoeken!
       </p>
       <div class="aboutme_buttons">
         <a href="./assets/img/CV.pdf">
@@ -201,34 +146,6 @@ $conn = $obj->connection();
             <i class="fa-regular fa-star"></i>
           </div>
         </div>
-        <!-- <div class="skill">
-          <i class="fa-brands fa-bootstrap"></i>
-          <h4>Bootstrap</h4>
-          <div class="progress">
-            <div data-progress="75"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <i class="fa-brands fa-sass"></i>
-          <h4>SASS</h4>
-          <div class="progress">
-            <div data-progress="60"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <i class="fa-brands fa-python"></i>
-          <h4>Python</h4>
-          <div class="progress">
-            <div data-progress="30"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <i class="fa-brands fa-react"></i>
-          <h4>React</h4>
-          <div class="progress">
-            <div data-progress="35"></div>
-          </div>
-        </div> -->
       </div>
     </div>
   </section>
@@ -269,7 +186,6 @@ $conn = $obj->connection();
       </div>
     </div>
   </section>
-  <!-- MAIN END -->
 
   <?php
     include "./footer.php";
